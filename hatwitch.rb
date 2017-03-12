@@ -27,7 +27,7 @@ parser = OptionParser.new do|opts|
 		options[:hash] = hash;
 	end
 
-	opts.on('-c', '--crack', 'Cracking your password with wordlist') do |cracking|
+	opts.on('-c', '--crack', 'Developing') do |cracking|
 		options[:cracking] = cracking;
 	end
 	logo()
