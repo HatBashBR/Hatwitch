@@ -42,7 +42,7 @@ parser.parse!
 
 
 if options[:hash].length == 8 
-    puts"ADLER-32"
+    	puts"ADLER-32"
 	puts"FCS-32B"
 	puts"ELF-32"
 	puts"Fletcher-32"
@@ -69,7 +69,7 @@ elsif options[:hash].length == 4
 
 elsif options[:hash].length == 32
 
-	        puts"MD5 " 
+	       		 puts"MD5 " 
 			puts "MD4 "
 			puts "MD2 "
 			puts "SHARK-32 "
@@ -82,14 +82,14 @@ elsif options[:hash].length == 32
 			puts "RAdmin v2.x "
 			puts "RipeMD-128"
 			puts "RipeMD-128(HMAC)"
-		    puts "Snefru-128"
-		    puts "Snefru-128 (HMAC)"
-		    puts "Tiger-128"
-		    puts "Tiger-128 (HMAC)"
-		    puts"MD5(ZipMonster) " 
-		    puts"Skein-256(128) " 
-		    puts"Skein-512(128) " 
-            puts "MD2(HMAC) "
+		   	puts "Snefru-128"
+		    	puts "Snefru-128 (HMAC)"
+		    	puts "Tiger-128"
+		    	puts "Tiger-128 (HMAC)"
+		    	puts"MD5(ZipMonster) " 
+		    	puts"Skein-256(128) " 
+		   	puts"Skein-512(128) " 
+           		 puts "MD2(HMAC) "
 		    puts"MD5(HMAC(Wordpress)) " 
 		    puts "md5(&#36pass.&#36alt)"
 		    puts "md5(&#36pass.&#36salt.&#36pass)"
@@ -114,7 +114,7 @@ elsif options[:hash].length == 32
             puts "12 x md5(&#36pass) "
             puts "Double MD5 "
             puts "vBulletin < v3.8.5 "
-            result = exec("python hatdecrypter.py -t 1 -p options[:hash]")
+            
               
 
 elsif options[:hash].length == 13
@@ -160,7 +160,7 @@ elsif options[:hash].length == 40
 		puts "sha1(sha1(&#36salt.&#36pass))"
 		puts "sha1(sha1(sha1(&#36pass)))"
 		puts "sha1(strtolower(&#36username).&#36pass)"	
-		result = exec("python hatdecrypter.py -t 1 -p options[:hash]")
+		
 
 elsif option[:hash].length == 64
 		puts"SHA-256"
